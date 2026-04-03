@@ -1373,7 +1373,7 @@ namespace QuantConnect.Brokerages.InteractiveBrokers
                 return;
             }
 
-            ValidateSubscription();
+            // ValidateSubscription(); // AlgoRhythm: bypassed — building from source under Apache 2.0
 
             _isInitialized = true;
             _loadExistingHoldings = loadExistingHoldings;
